@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Israel Gaza War – Visual Story</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="hero">
+  <div class="parallax back"></div>
+  <div class="parallax mid"></div>
+  <div class="parallax front"></div>
+  <div class="hero-text">
+    <h1>Israel – Gaza War</h1>
+    <p>Interactive Visual Story</p>
+  </div>
+</section>
+
+<section class="map-section">
+  <h2>Satellite View — Attack Routes</h2>
+
+  <div class="map-wrap">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Gaza_Strip_satellite_map.png" class="map-img">
+
+    <svg viewBox="0 0 800 500" class="attack-layer">
+      <path d="M610 120 L360 280" class="arrow"/>
+      <path d="M630 150 L390 300" class="arrow delay1"/>
+      <path d="M600 180 L420 330" class="arrow delay2"/>
+    </svg>
+  </div>
+</section>
+
+<section class="drone-section">
+  <h2>Drone Fly-Over Simulation</h2>
+  <div class="drone-view"></div>
+</section>
+
+<section class="timeline-section">
+  <h2>Casualty Growth Timeline</h2>
+  <div class="timeline">
+    <div class="bar" data-value="25">Week 1</div>
+    <div class="bar" data-value="50">Week 2</div>
+    <div class="bar" data-value="75">Week 3</div>
+    <div class="bar" data-value="100">Week 4</div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
